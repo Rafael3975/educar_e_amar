@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<style>
+    .margem_pagina{
+        margin: auto;
+        width: 80%;
+        margin-top: -5px;
+        background-color: bisque;
+        
+    }
+</style>
+
+<html lang="pt-br" class="margem_pagina">
+    <head>
+        <!--top demaiss-->
+        <meta charset="utf-8">
+        <title>Projeto Educar é Amar</title>
+        <meta name="author" content="Rafael Souza da Silva">
+        <meta name="description" content="Portal para educadores voltado para auxiliar pessoas com deficiências diversas">
+        <meta name="keywords" content="Educação, Tecnologia, Portal, Inclusão, Vídeos, Artigos, Dicas, Educação Inclusiva, Socialização, Deficiência, Visual, motora, auditiva, mental, inclusão">
+
+        <style>
+            .background{
+                background-image: url(1);
+                
+            }
+            .portal{
+                font-size: 350%;
+                font-family: sans-serif;
+                color: orange;
+                font-weight: bold;
+                font-size: clamp(20px, 3.5px + 4vw, 1200%);
+                position: relative;
+                margin-top: 0%;
+                
+                top:0;padding:4px;
+                transition: all .2s ease-in-out;
+                
+                
+                
+            }
+            .portal:hover{
+                border: #999;
+                top:-4px; 
+                }
+            .educar{
+                font-family: sans-serif;
+                color: rgb(136, 204, 34);
+                font-size: clamp(50px, 3.5px + 7vw, 1000%);
+                position: relative;
+                margin-top: -9%;
+                margin-left: 20%;
+                display: inline-block;
+                font-weight: bold;
+                top:0;padding:4px;
+                transition: all .2s ease-in-out;
+            }
+            .educar:hover{
+                border: #999;
+                top:-4px; 
+            }
+            .amar{
+                font-family: sans-serif;
+                color: red;
+                font-size: clamp(15px, 10px + 7vw, 1000%);
+                position: relative;
+                margin-top: -13%;
+                margin-left: 55%;
+                text-align: center;
+                font-weight: bold;
+                font-weight: bold;
+
+                top:0;padding:4px;
+                transition: all .2s ease-in-out;
+            }
+            .amar:hover{
+                border: #999;
+                top:-4px; 
+            }
+            .date{
+                text-align: right;
+                margin-left: 25%;
+                position: relative;
+                font-size: clamp(10px, 10px + 2.5vw, 1000%);
+                font-family: sans-serif;
+            }
+            .cadeirante{
+                position: relative;
+                margin-top: -27%;
+                margin-left: -2%;
+                display: block;
+                width: 20%;
+
+                
+                
+            }
+            .cadeirante:hover{
+                
+            }
+            .livro_azul{
+                width: 13%;
+                position: relative;
+                display: block;
+                margin-left: 78%;
+                margin-top: -28%;
+
+                
+            }
+            .livro_azul:hover{
+                
+            }
+            .mensagem{
+                font-family:sans-serif;
+                padding-top: 18%;
+                font-size: clamp(8px, 10px + 1.5vw, 700%);
+                text-align: center;
+
+            }
+            #mensagem_espaço{
+                padding-bottom: 0.5%;
+                background: rgb(172, 226, 86);
+                border: 2px solid chocolate;
+                padding: 15px;
+                margin-bottom: 0.5%;
+                margin-top: 0.5%;
+
+            }
+            #mensagem_espaço1{
+                margin-bottom: 0.7%;
+                padding-bottom: 0.5%;
+                background: rgb(172, 226, 86);
+                border: 2px solid chocolate;
+                padding: 15px;
+            }
+
+            .mensagem textarea{
+                font-size: clamp(8px, 10px + 1vw, 200%);
+                text-align: center;
+                font-family:sans-serif;
+                padding-top: 4%;
+                background-color: #FFFACD;
+                width: 99%;
+                margin: auto;
+            }
+            .video{
+                width: 100%;
+                margin-bottom: 0%;
+                margin-top: 1.5%;
+                padding-left: 0%;
+                
+                
+            }
+            .ajuste_video{
+                
+                background-color: #FFFACD;
+                
+            }
+            .enviar_mensagem{
+               width: 10%;
+               display: inline-block;
+               font-size: clamp(3px, 10px + 0.5vw, 100%);
+               margin-left: 60%;
+               position: absolute;
+               margin-top: -30%;
+               
+            }
+            caption{
+                font-family:sans-serif;
+                padding-top: 2%;
+                font-size: clamp(8px, 10px + 1.5vw, 700%);
+                text-align: center;
+            }
+            table{
+                border-collapse: collapse;
+                width: 100%;
+                margin: auto;
+                background: #FFFACD;
+                border: solid black;
+                border-width: 1px;
+            }
+            th{
+                background: rgb(172, 226, 86);
+                border: 2px solid chocolate;
+                padding: 15px;
+            }
+            td{
+                border: 1px solid black;
+                text-align: center;
+                padding: 10px;
+            }
+            .email_mensagem_submeter{
+                margin-top: 2%;
+                font-size: clamp(8px, 10px + 1vw, 200%);
+                background-color: #FFFACD;
+                border: solid black;
+                border-width: 1px;
+            }
+            .msg{
+                margin-top: 2%;
+                width: 100%;
+            }
+            .msg_border{
+                border: solid black;
+                border-width: 1px;
+                background: rgb(172, 226, 86);
+                border: 2px solid chocolate;
+                padding: 15px;
+                padding-bottom: 10px;
+            }
+            .footer{
+                border: solid black;
+                border-width: 1px;
+                background: rgb(172, 226, 86);
+                border: 2px solid chocolate;
+                padding: 15px;
+                padding-bottom: 2%;
+                margin-bottom: 2%;
+                margin-top: 6%;
+                text-align: center;
+                font-family: sans-serif;
+                font-size: clamp(5px, 7px + 1vw, 100%);
+            }
+            .text_initial_page{
+                background-color: #FFFACD;
+                text-align: justify;
+                font-size: clamp(8px, 8px + 1vw, 200%);
+                border: solid black 1px;
+                margin-top: 2%;
+            }
+            .text_image{
+                float: right;
+            }
+            #ajuste_justificar_direita{
+                text-align: justify;
+            }
+
+        </style>
+
+    </head>
+
+    <body class="background">
+        <div class="date"> 
+            <script class="date" language="JavaScript">
+
+                document.write("<font color='#000000' size='3' face='sans-serif'>")
+                var mydate=new Date()
+                var year=mydate.getYear()
+                if (year<2000)
+                year += (year < 1900) ? 1900 : 0
+                var day=mydate.getDay()
+                var month=mydate.getMonth()
+                var daym=mydate.getDate()
+                if (daym<10)
+                daym="0"+daym
+                var dayarray=new Array("Domingo","Segunda-feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado")
+                var montharray=new Array(" de Janeiro de "," de Fevereiro de "," de Março de ","de Abril de ","de Maio de ","de Junho de","de Julho de ","de Agosto de ","de Setembro de "," de Outubro de "," de Novembro de "," de Dezembro de ")
+                document.write("   "+dayarray[day]+", "+daym+" "+montharray[month]+year+" ")
+                document.write("</b></i></font>")
+                </script>
+        </div>
+        <p class="portal">Portal</p>
+        <p class="educar">educar é</p>
+        <p class="amar">AMAR</p>
+        <img  class="cadeirante" src="cadeiran.png" alt="Cadeirante">
+        <img class="livro_azul" src="livro_azul.jpg" alt="Livro Azul">
+            
+        
+        <form action="#" method="post">
+            <fieldset class="ajuste_video">
+
+                <h2>Como trabalhar com deficientes visuais em sala de aula?</h2>
+                <p class="text_initial_page">
+                    Existe uma diferença entre como trabalhar com deficientes visuais na sala de aula, 
+                    e como trabalhar esse conceito com os demais alunos na escola. Neste artigo vou focar 
+                    nessa primeira: questão como o educador deve agir em relação ao aluno com deficiência 
+                    visual.  Mas o que seria deficiência visual? Trata-se da perda da capacidade da visão, 
+                    seja por um dos membros oculares, ou em ambos, não podendo ser melhorada com óculos, 
+                    lentes, cirurgias etc.
+                </p>
+
+                <video autoplay muted id="executar" width="100%" height="30%" controls="controls" autoplay="autoplay muted" poster="Capa_Video.PNG" style="padding-top: 1%; padding-bottom: 1%;">
+                    <source src="Video1.webm" type="video/webm"/>
+                </video>
+            <div>    
+                <script>
+                    document.getElementById('executar').play();
+                </script>
+            </div>    
+            </fieldset>
+        </form>
+          
+        <table>
+            <caption id="mensagem_espaço">Confira vídeos, artigos e dicas sobre a Educação Inclusiva</caption>
+            <thead>
+                <tr>
+                    <th>Tipos de deficiências</th>
+                    <th>Vídeos</th>
+                    <th>Áudios dos vídeos</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="3">*Vídeos de autoria própria*</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td rowspan="4">Deficiência Visual</td>
+                    <td>Como trabalhar com deficientes visuais em sala de aula!</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    
+                    <td>Que cuidados o professor deve tomar ao trabalhar com deficientes visuais?</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    
+                    <td>Como trabalhar o conceito de deficiência visual no contexto escolar!</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    
+                    <td>Como fazer atividades adaptadas para alunos especiais?</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Deficiência Motora</td>
+                    <td>Quais são as deficiências motoras?</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    <td>Como trabalhar a deficiência motora na sala de aula?</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    <td>Plano de Estudo Individualizado (PEI)!</td>
+                    <td>Áudio</td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="6">Deficiência Mental</td>
+                    <td>O que é deficiência mental, exemplos!</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    <td>Retardo Mental Leve</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    <td>Retardo Mental Moderado</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    <td>Retardo Mental Grave</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    <td>Retardo Mental Profundo</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    <td>Transtorno do Déficit de Atenção com Hiperatividade (TDAH)</td>
+                    <td>Áudio</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="6">Deficiência Auditiva</td>
+                    <td>Quais são os direitos do aluno com deficiência auditiva na escola?</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    <td>O que o professor deve fazer para o aprendizado do aluno surdo / deficiente auditivo?</td>
+                    <td>Áudio</td>
+                </tr>
+                <tr>
+                    <td>Como são realizadas a inclusão de alunos com esse tipo de deficiência nas turmas?</td>
+                    <td>Áudio</td>
+                </tr>
+                
+            </tbody>
+
+        </table>
+
+        <article>
+            <fieldset class="text_initial_page" >
+            
+                <h2>Educação Inclusiva e Socialização</h2>
+                <p>
+                    Antes de mais nada, é importante deixar claro que uma deficiência não é algo que devemos ter receio, 
+                    ou vergonha, ou qualquer preconceito, xenofobia etc.  Isso porque é imprescindível nos colocarmos no 
+                    lugar dessas pessoas e entender suas necessidades.
+                    Quando tratamos do assunto da educação inclusiva, é de inteira responsabilidade do educador, a 
+                    medida do possível, garantir os mínimos quesitos necessários para que este portador de deficiência, 
+                    possa conseguir assimilar e absorver as matérias, técnicas e assuntos necessários.
+                    Ao contrário do que muitas pessoas pensam, o processo construtivo da educação não depende apenas do 
+                    profissional docente. 
+                    A sala de aula é a palavra-chave trata-se de uma esfera de aprendizado, tendo seus objetivos. 
+                    Um desses objetivos mais cruciais é a socialização.
+
+                </p>
+                <img  class="text-image" src="https://portal.unit.br/wp-content/uploads/2022/10/aluno-cadeirante.jpg" style="width: 50%; height: 35%; float: right; margin-top: 7%; margin-left: 1%;" alt="Imagem de alunos numa sala, um deles deficiente">
+                <div style="width: 50%; font-size: 11px; float: right; margin-top: 1%; margin-left: 1%; display: inline-block; text-align: justify; position: relative; padding-right: 0%;">Fonte: https://portal.unit.br/blog/noticias/entenda-a-importancia-da-educacao-inclusiva</div>
+                <h2>
+                    O processo de socialização
+                </h2>    
+                <p id="ajuste_justificar_direita">
+                    A socialização é importante para o ser humano. O ser humano sempre foi condicionado a socializar. 
+                    Mas o que é socializar? O simples fato de uma criança pedir um apontador para o seu colega já 
+                    introduz a prática da socialização. Ou seja, é a interação com o meio, com as pessoas. São as 
+                    diferentes linguagens da comunicação. São as diferentes formas de expressão, com o intuito de 
+                    passar uma mensagem para o outro. É interessante perceber que não devemos cometer o erro de 
+                    associar educação inclusiva de pessoas com deficiências apenas às crianças. O educador tem que 
+                    estar preparado para as mais diversas situações, com os mais diversos públicos. Talvez ensinar a 
+                    uma criança deficiente uma determinada coisa, não significa que esse mesmo método utilizado 
+                    servirá para o outro portador de deficiência. Então na verdade, lidar com um deficiente em sala de 
+                    aula é, em grande parte, uma atividade de observação. Observar qual deficiência ele vai ter e qual 
+                    suporte ele vai precisar. São muitas as deficiências, mas procurei destacar as com mais ocorrência 
+                    na população brasileira: visual, motora, auditiva e mental ("Politize! -  acessibilidade e o direito
+                    das pessoas com deficiência").
+
+                </p>
+            </fieldset>        
+        </article>
+
+        <form action="envia_fale.php" method="post" name="form">
+            <fieldset class="email_mensagem_submeter">
+                <legend class="msg_border">É um educador? Colabore com o Portal Educar é Amar, mandando uma mensagem</legend>
+                <label>Email</label>
+                <input type="email" required>
+
+                <textarea  class="msg" name="msg" style="resize: none;" rows="7" cols="110"></textarea>
+                <input type="submit" value="Enviar">
+
+            </fieldset>
+        </form>  
+        <footer>
+            <div class="footer">
+                <p>Todos os direitos reservados  Dev_Ultra © 2023   devultra7.7@gmail.com</p>
+            </div>
+        </footer>
+    </body>
+
+</html>
